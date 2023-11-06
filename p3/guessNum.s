@@ -137,6 +137,18 @@ main:
    input1: .asciz "%d"
 #End main
 
+
+# function genRand
+# genRand creates a random number in the range of 0 to r0
+#         using the C rand function
+# Inpunts:
+#           r0 - max in range of random number
+# Variables:
+#           r4 - upper bound
+#           r5 - original random number in larger range
+# Outputs:
+#           r0 - random number in range user requested
+
 .text
 .global genRand
 
